@@ -6,7 +6,7 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
     <meta name="author" content="Jose R. Meza">
     <link rel="stylesheet" href="styles/base.css">
-
+    <script defer src="scripts/getdates.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
     
 </head>
 <body>
-    <section class="body_container">
+    <div class="body_container">
         <header>
             <h1>
                 WDD 131 - Dynamic Web Fundamentals - Jose R. Meza
@@ -32,11 +32,19 @@
         <main>
             <section class="card">
                 <h2>About Me</h2>
-                <p id="p_aboutme">My name is Jose, I'm from Mexico</p>
-                <img id="photo" src="images/photo.png" alt="portrait photo" width="200">
-                <img id="flag" src="images/Flag_of_Mexico.svg" alt="Mexico flag" width="300">
-                <h3>Veracruz, Mexico</h3>
-                <p id="p_mexico">About Mexico</p>
+                <p id="p_aboutme">My name is Jose. I'm from Mexico and live in Veracruz. I love to spend time with my family, currently three sons and my wife. I like to personalize Items and clothes with my designs.</p>
+                <img id="photo" src="images/photo.png" alt="portrait photo">
+                <div class="about_mexico">
+                    <h3>Veracruz, Mexico</h3>
+                    <figure>
+                        <img id="flag" src="images/Flag_of_Mexico.svg" alt="Mexico flag" >
+                        <figcaption>Official Flag of Mexico</figcaption>
+                    </figure>
+                    
+                    <p id="p_mexico">Mexico is the tenth most populous country in the world, with an estimated population of more than 130 million people in 2023. Most of them have Spanish as their mother tongue, which the state recognizes as a national language along with 68 indigenous languages ​​of the country, although around 364 linguistic varieties are spoken in the country. These figures make Mexico the country with the largest number of Spanish speakers, as well as the seventh country with the greatest linguistic diversity in the world.</p>
+                </div>
+                
+                
             </section>
             <section class="card">
                 <h2>Web Dev References</h2>
@@ -49,10 +57,10 @@
             </section>
         </main>
         <footer>
-            <p>©<span id="currentyear"></span> Jose R. Meza | Mexico</p>
-            <p>Last Modification: <span id="lastModified"></span></p>
+            <p>&copy;<span id="currentYear"></span> Jose R. Meza | Mexico</p>
+            <p id="lastModified"></p>
         </footer>
-    </section>
+    </div>
     
 </body>
 </html>
