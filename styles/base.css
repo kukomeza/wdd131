@@ -114,7 +114,9 @@ nav ul {
 }
 
 .card ul{
+    align-self: center;
     grid-column: 1/3;
+    grid-row: 2/4;
 }
 
 #photo{
