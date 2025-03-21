@@ -36,5 +36,5 @@ let conditions = 0;
 
 windChillFactor.innerHTML = calculateWindChill(temperature, windSpeed);
 placeTemperature.innerHTML = temperature + "°F";
-placeWindSpeed.innerHTML = windSpeed + "m/h";
+placeWindSpeed.innerHTML = windSpeed + "mph";
 placeConditions.innerHTML = conditions;
