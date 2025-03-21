@@ -5,6 +5,8 @@
 }
 
 .body-container{
+    display: grid;
+    grid-template:80px 1fr 80px / 1fr;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -34,6 +36,8 @@
 }
 
 header{
+    display:grid;
+    align-items: center;
     background-color: darkgreen;
     color: aliceblue;
 }
@@ -49,9 +53,10 @@ header{
   }
 
 footer{
-   
+    display: grid;
     background-color: red;
     color: aliceblue;
     font-weight: 500;
     justify-items: center;
+    align-items: center;
 }
