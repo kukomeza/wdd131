@@ -3,6 +3,7 @@ const today = new Date();
 const currentYear = document.querySelector("#currentYear")
 const lastModified = document.querySelector("#lastModified")
 
+const msg = document.getElementById
 
 const fullYear = today.getFullYear()
 

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+	
+	box-sizing: border-box;
+}
+
+.body-container{
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container{
+    display: grid;
+    grid-template: 1fr 300px 200px / 1fr ;
+}
+
+.card{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template: 10% / 100%;
+    
+    
+}
+
+.card li {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr ;
+    justify-items: left;
+    gap: 1rem;
+}
+
+.card h2{
+    margin: auto;
+}
+
+header{
+    background-color: darkgreen;
+    color: aliceblue;
+}
+
+.place_title{
+    justify-items: center;
+    align-items: center;
+}
+
+.hero img {
+	width: 100%;
+	height: auto;
+  }
+
+footer{
+   
+    background-color: red;
+    color: aliceblue;
+    font-weight: 500;
+    justify-items: center;
+}
