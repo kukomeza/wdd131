@@ -9,7 +9,13 @@ header{
     grid-column: 1 / 3;
 }
 
-
+h1{
+    grid-column: 1 /3;
+    padding-left: 30%;
+    padding-right: 30%;
+    font-weight: 100;
+    font-size: 2rem;
+}
 
 
 main{
@@ -21,7 +27,7 @@ main{
     padding-left: 1rem;
     padding-right: 1rem;
     grid-column: 1 / 3;
-    grid-template: 1fr / 1fr auto;
+    grid-template: 30px 1fr / 1fr auto;
     grid-gap: 0 5px;
 }
 
@@ -33,8 +39,7 @@ footer{
 }
 
 
-
-h1 {
+#course-title {
 	font-weight: 100;
     font-size: 2rem;
     color: #EAFFDA;
