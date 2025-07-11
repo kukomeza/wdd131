@@ -1,5 +1,9 @@
 :root{
     font-family: 'Roboto', sans-serif;
+    --primary-color: aliceblue;
+    --flag-color-1: darkgreen;
+    --flag-color-2: white;  
+    --flag-color-3: red;
 }
 
 *{
@@ -39,14 +43,18 @@
 .card h2{
     margin: auto;
 }
-
+.weather h2::after {
+    content: url("/images/sun_cloud_rain.svg");
+    display: block;
+    justify-self: center;
+}
 
 
 header{
     display:grid;
     align-items: center;
-    background-color: darkgreen;
-    color: aliceblue;
+    background-color: var(--flag-color-1);
+    color: var(--primary-color);
 }
 
 .place_title{
@@ -61,8 +69,8 @@ header{
 
 footer{
     display: grid;
-    background-color: red;
-    color: aliceblue;
+    background-color: var(--flag-color-3);
+    color: var(--primary-color);
     font-weight: 500;
     justify-items: center;
     align-items: center;
