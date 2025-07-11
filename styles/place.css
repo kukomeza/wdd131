@@ -1,3 +1,7 @@
+:root{
+    font-family: 'Roboto', sans-serif;
+}
+
 *{
     margin: 0;
 	
@@ -7,7 +11,7 @@
 .body-container{
     display: grid;
     grid-template:80px 1fr 80px / 1fr;
-    font-family: 'Roboto', sans-serif;
+    
 }
 
 .main-container{
@@ -35,6 +39,8 @@
 .card h2{
     margin: auto;
 }
+
+
 
 header{
     display:grid;
