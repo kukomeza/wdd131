@@ -2,6 +2,7 @@ const today = new Date();
 
 const currentYear = document.querySelector("#currentYear")
 const lastModified = document.querySelector("#lastModified")
+const currentPage = document.querySelector("#h2-title")
 
 const msg = document.getElementById
 
@@ -127,26 +128,31 @@ const bySmall = document.querySelector("#small");
 
 home.addEventListener("click", () => {
 	createTempleCard(temples)
+	currentPage.textContent="Home"
 })
 
 byOld.addEventListener("click", () => {
 	
 	createTempleCard(temples.filter(temple => temple.year < 1900));
+	currentPage.textContent="Old Temples"
 })
 
 byNew.addEventListener("click", () => {
 	
 	createTempleCard(temples.filter(temple => temple.year > 2000));
+	currentPage.textContent="New Temples"
 })
 
 byLarge.addEventListener("click", () => {
 	
 	createTempleCard(temples.filter(temple => temple.area > 90000));
+	currentPage.textContent="Large Temples"
 })
 
 bySmall.addEventListener("click", () => {
 	
 	createTempleCard(temples.filter(temple => temple.area < 10000));
+	currentPage.textContent="Small Temples"
 })
 
 function createTempleCard(filteredTemples) {
