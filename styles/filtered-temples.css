@@ -73,18 +73,18 @@ header h1{
 	content: "X";
 }
 
-main { 
-    max-width: 900px;
-    display: grid;
-    margin: auto;
-    padding: 1rem;
-    grid-gap: 1rem;
-    grid-template: 30px repeat(8, 1fr) / 1fr;
-  }
+.card {
+	max-width: 900px;
+	display: grid;
+	margin: auto;
+	padding: 1rem;
+	grid-gap: 1rem;
+	grid-template: 1fr / 1fr;
+}
 
 
 
-main img {
+.card img {
     max-width: 100%;
     min-width: 50%;
 
@@ -96,7 +96,7 @@ main h2{
     
 }
 
-  footer{
+footer{
     background-color: #1F2041;
     color: #EAFFDA;
     font-weight: 500;

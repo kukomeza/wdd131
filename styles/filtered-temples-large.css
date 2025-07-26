@@ -12,9 +12,9 @@
 		flex: 1 1 100%;
 	}
 
-    main{
+    .card{
        
-        grid-template: 30px repeat(3, 1fr) / 1fr 1fr 1fr;
+        grid-template: 1fr / 1fr 1fr 1fr;
     }
 
     main h2{
