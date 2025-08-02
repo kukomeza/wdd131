@@ -1,9 +1,9 @@
 :root {
     font-family: 'Roboto', sans-serif;
     --primary-color: #3694d2;
-    --secondary-color: #e9ac69;
+    --secondary-color: hsl(31, 74%, 66%);
     --accent1-color: #f1fffaff;
-    --accent2-color: red;
+    --accent2-color: #a22522ff;
 
     --nav-background-color: var(--primary-color);
     --nav-link-color: var(--secondary-color);
