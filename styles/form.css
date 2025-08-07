@@ -1,4 +1,126 @@
-/* stars */
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #e0faca;
+}
+
+header h1 {
+    margin: 0;
+    justify-self: center;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    
+}
+
+/*----------- BODY --------------*/
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+
+}
+
+.main-container {
+    justify-self: center;
+    
+}
+
+.main-container p{
+    justify-self: center;
+    font-size:x-large;
+    font-weight: 700;
+}
+
+
+/*--------------Form---------------*/
+
+.revfrm div {
+    padding-top:.75rem;
+    font-weight: bold;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+.revfrm label{
+    display: block;
+    padding-top: .75rem;
+    color: #000000;
+    font-weight: bold;
+    width: 100%;
+    max-width: 400px;
+    
+    
+}
+
+
+
+.revfrm input[type="text"],
+.revfrm select,
+.revfrm textarea,
+.revfrm input[type="date"]{
+    
+    padding: .75rem 0 .75rem 0;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    
+}
+
+.revfrm textarea{
+    height: 100px;
+}
+
+
+.revfrm input[type="checkbox"]{
+    margin-right: 6px;
+    
+}
+
+.revfrm input[type="checkbox"]>label {
+    font-size: small;
+
+}
+
+.revfrm input[type="submit"]{
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color:#fff;
+    border-radius: 6px;
+    padding: .75rem 1rem .75rem 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 0px 6px 0px;
+    font-weight: bold;
+    font-size: large;
+
+}
+              
+.revfrm input:required{
+    border-bottom: solid 8px red;
+
+}
+
+.revfrm input:required:valid{
+    border-bottom: solid 8px green;
+}
+
+.revfrm select:required {
+    border-bottom: solid 8px red;
+
+}
+
+.revfrm select:required:valid {
+    border-bottom: solid 8px green;
+}
+
+/*--------------Stars---------------*/
+
 input[type="radio"] {
     display: none;
     position: relative;
@@ -8,7 +130,8 @@ input[type="radio"] {
 .stars {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: left;
+    justify-content:space-between;
+    margin-bottom:.75rem;
 }
 
 .stars>label {
@@ -19,7 +142,7 @@ input[type="radio"] {
     margin-left: 5px;
     display: flex;
     align-items: center;
-    caret-color: rgba(0, 0, 0, 0);
+    caret-color: black;
     /* remove blinking cursor*/
 }
 
@@ -33,4 +156,19 @@ input[type="radio"] {
 
 .stars input:checked~label::before {
     content: "\2605";
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+    background-color: rgb(247, 247, 237);
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #e0faca;
+    padding: .5rem 2%;
+    text-align: center;
 }
